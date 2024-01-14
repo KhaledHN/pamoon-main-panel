@@ -203,7 +203,7 @@ const Page2 = () => {
                     <div class="justify-start items-center gap-[13.33px] flex">
                       <div class="w-6 h-6 justify-center items-center flex">
                         <div class="w-6 h-6 relative">
-                          <img src="/assets/global.svg" />
+                          <img src="/assets/elecLogo.png" />
                         </div>
                       </div>
                     </div>
@@ -282,7 +282,7 @@ const Page2 = () => {
                     <div class="justify-start items-center gap-[13.33px] flex">
                       <div class="w-6 h-6 justify-center items-center flex">
                         <div class="w-6 h-6 relative">
-                          <img src="/assets/global.svg" />
+                          <img src="/assets/CirLogo.png" />
                         </div>
                       </div>
                     </div>
