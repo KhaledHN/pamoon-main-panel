@@ -10,7 +10,7 @@ const Page2 = () => {
   return (
     <div className=" w-full h-[750px] duration-200 bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
       <div className=" w-[1240px] h-full pt-[40px] duration-200 px-12 ">
-        <div class="w-[360px] md:w-full h-10 justify-between duration-200 items-center inline-flex">
+        <div class="w-[345px] md:w-full h-10 justify-between duration-200 items-center inline-flex">
           <div class="text-slate-800 text-xl font-semibold leading-snug">
             All
           </div>
