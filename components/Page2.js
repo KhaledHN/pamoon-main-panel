@@ -197,9 +197,17 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class="self-stretch pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
-                  <img class=" rounded-[10px]" src="/assets/elecLogo.png" />
+                  <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
+                    <div class="justify-start items-center gap-[13.33px] flex">
+                      <div class="w-6 h-6 justify-center items-center flex">
+                        <div class="w-6 h-6 relative">
+                          <img src="/assets/global.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="text-slate-800 text-base font-semibold leading-[14px]">
                     Untitled
                   </div>
@@ -209,12 +217,13 @@ const Page2 = () => {
                     Edited 23 min ago
                   </div>
                   <div class="w-[18px] h-[18px] justify-center items-center flex">
-                    <button class="w-[18px] h-[18px] relative">
+                    <div class="w-[18px] h-[18px] relative">
                       <img src="/assets/more.svg" />
-                    </button>
+                    </div>
                   </div>
                 </div>
               </button>
+
               <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
@@ -267,9 +276,17 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class="self-stretch pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
-                  <img class=" rounded-[10px]" src="/assets/CirLogo.png" />
+                  <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
+                    <div class="justify-start items-center gap-[13.33px] flex">
+                      <div class="w-6 h-6 justify-center items-center flex">
+                        <div class="w-6 h-6 relative">
+                          <img src="/assets/global.svg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="text-slate-800 text-base font-semibold leading-[14px]">
                     Untitled
                   </div>
