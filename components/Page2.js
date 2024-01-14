@@ -8,9 +8,9 @@ const Page2 = () => {
   };
 
   return (
-    <div className=" w-full h-[750px] bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
-      <div className=" w-[1240px] h-full pt-[40px] px-12 ">
-        <div class="w-[360px] md:w-full h-10 justify-between items-center inline-flex">
+    <div className=" w-full h-[750px] duration-200 bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
+      <div className=" w-[1240px] h-full pt-[40px] duration-200 px-12 ">
+        <div class="w-[360px] md:w-full h-10 justify-between duration-200 items-center inline-flex">
           <div class="text-slate-800 text-xl font-semibold leading-snug">
             All
           </div>
@@ -144,7 +144,7 @@ const Page2 = () => {
             }`}
           >
             {/* Content for button 2 */}
-            <div class="w-[1160px] h-[396px] flex-col justify-start items-start gap-3 inline-flex">
+            <div class="md:w-[1160px] w-[360px] h-[396px] duration-200 flex-col justify-start items-start gap-3 inline-flex">
               <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">

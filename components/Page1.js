@@ -8,9 +8,9 @@ const Page1 = () => {
   };
 
   return (
-    <div className="w-full md:h-[428px] h-[1000px] bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto ">
-      <div className="w-full md:w-[80%] h-full pt-[40px] px-4 md:px-12 ">
-        <div className="w-full justify-between items-start flex flex-col md:flex-row">
+    <div className="w-full md:h-[428px] h-[1000px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto ">
+      <div className="w-full md:w-[80%] h-full pt-[40px] duration-200 px-4 md:px-12 ">
+        <div className="w-full justify-between items-start flex duration-200 flex-col md:flex-row">
           <div className="md:w-[1240px]">
             <p className="text-left text-slate-800 text-[37.05px] font-medium leading-[51.87px] ">
               Welcome Back, Alexander 🙌✨
