@@ -157,7 +157,7 @@ const Page2 = () => {
                     </div>
                   </div>
                   <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                    Untitled
+                    Untitled.
                   </div>
                 </div>
                 <div class="justify-start items-center gap-2 flex">
