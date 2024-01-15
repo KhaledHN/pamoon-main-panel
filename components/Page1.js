@@ -8,8 +8,11 @@ const Page1 = () => {
   };
 
   return (
-    <div className="w-full md:h-[428px] h-[1000px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto ">
-      <div className="w-full md:w-[80%] h-full pt-[40px] duration-200 px-4 md:px-12 ">
+    <div
+      className="w-full md:h-[428px] h-[1000px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto bg-no-repeat bg-right  "
+      style={{ backgroundImage: 'url("/assets/Union.png")' }}
+    >
+      <div className="w-full md:max-w-[1240px] h-full pt-[40px] duration-200 px-4 md:px-12 ">
         <div className="w-full justify-between items-start flex duration-200 flex-col md:flex-row">
           <div className="md:w-[1240px]">
             <p className="text-left text-slate-800 text-[37.05px] font-medium leading-[51.87px] ">
@@ -58,65 +61,73 @@ const Page1 = () => {
           </div>
         </div>
 
-        <div className="w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
-          <div className="w-[295px]  h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
-            <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
-            <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-              <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                Pamoon AI
+        <div className=" w-full px-8 ">
+          <div className=" w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
+            <div className="w-[295px]  h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
+              <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
+              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
+                <div class="text-slate-800 text-base font-semibold leading-[14px]">
+                  Pamoon AI
+                </div>
+                <div class="text-slate-600 text-sm font-normal leading-[14px]">
+                  Lorem ipsum
+                </div>
               </div>
-              <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                Lorem ipsum
+              <div class="px-3 py-2 left-[168px] top-[19px] absolute bg-white bg-opacity-10 rounded-[10px] shadow-lg justify-center items-center gap-2 inline-flex">
+                <div class="text-violet-500 text-sm font-normal leading-[14px]">
+                  Coming Soon
+                </div>
+              </div>
+              <div class="w-[46px] h-[46px] left-[17px] top-[19px] absolute">
+                <div class="w-[29.96px] h-[6.84px] left-[6.78px] top-[38.78px] absolute bg-violet-600 rounded-tl-[40px] rounded-tr-[40px]"></div>
+                <div class="w-[46px] h-[46px] left-0 top-0 absolute  bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[13.40px]"></div>
+                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
+                  <div class="w-6 h-6 relative">
+                    <img src="/assets/magicpen.svg" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="px-3 py-2 left-[168px] top-[19px] absolute bg-white bg-opacity-10 rounded-[10px] shadow-lg justify-center items-center gap-2 inline-flex">
-              <div class="text-violet-500 text-sm font-normal leading-[14px]">
-                Coming Soon
-              </div>
-            </div>
-            <div class="w-[46px] h-[46px] left-[17px] top-[19px] absolute">
-              <div class="w-[29.96px] h-[6.84px] left-[6.78px] top-[38.78px] absolute bg-violet-600 rounded-tl-[40px] rounded-tr-[40px]"></div>
-              <div class="w-[46px] h-[46px] left-0 top-0 absolute  bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[13.40px]"></div>
-              <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                <div class="w-6 h-6 relative"></div>
-              </div>
-            </div>
-          </div>
 
-          <div className="w-[295px] h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
-            <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-emerald-200 rounded-[20px] border border-white"></div>
-            <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-              <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                Template Library
+            <div className="w-[295px] h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
+              <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-emerald-200 rounded-[20px] border border-white"></div>
+              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
+                <div class="text-slate-800 text-base font-semibold leading-[14px]">
+                  Template Library
+                </div>
+                <div class="text-slate-600 text-sm font-normal leading-[14px]">
+                  Explore web site
+                </div>
               </div>
-              <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                Explore web site
+              <div class="w-[46px] h-[46px] left-[17.33px] top-[19px] absolute">
+                <div class="w-[29.96px] h-[6.84px] left-[7.44px] top-[38.78px] absolute bg-emerald-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
+                <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[10px]"></div>
+                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
+                  <div class="w-6 h-6 relative">
+                    <img src="/assets/colorfilter.svg" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="w-[46px] h-[46px] left-[17.33px] top-[19px] absolute">
-              <div class="w-[29.96px] h-[6.84px] left-[7.44px] top-[38.78px] absolute bg-emerald-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
-              <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[10px]"></div>
-              <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                <div class="w-6 h-6 relative"></div>
-              </div>
-            </div>
-          </div>
 
-          <div className="w-[295px] h-[183px] relative shadow-lg rounded-3xl">
-            <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-amber-100 rounded-[20px]"></div>
-            <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-              <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                Watch Tutorials
+            <div className="w-[295px] h-[183px] relative shadow-lg rounded-3xl">
+              <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-amber-100 rounded-[20px]"></div>
+              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
+                <div class="text-slate-800 text-base font-semibold leading-[14px]">
+                  Watch Tutorials
+                </div>
+                <div class="text-slate-600 text-sm font-normal leading-[14px]">
+                  Learn Pammon
+                </div>
               </div>
-              <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                Learn Pammon
-              </div>
-            </div>
-            <div class="w-[46px] h-[46px] left-[16.67px] top-[19px] absolute">
-              <div class="w-[29.96px] h-[6.84px] left-[7.11px] top-[38.78px] absolute bg-orange-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
-              <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px]"></div>
-              <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                <div class="w-6 h-6 relative"></div>
+              <div class="w-[46px] h-[46px] left-[16.67px] top-[19px] absolute">
+                <div class="w-[29.96px] h-[6.84px] left-[7.11px] top-[38.78px] absolute bg-orange-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
+                <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px]"></div>
+                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
+                  <div class="w-6 h-6 relative">
+                    <img src="/assets/video-play.svg" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
