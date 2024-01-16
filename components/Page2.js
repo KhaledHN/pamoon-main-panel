@@ -63,9 +63,9 @@ const Page2 = () => {
             }`}
           >
             {/* Content for button 1 */}
-            <div class="w-[1160px] h-[554px] flex-col justify-center items-center gap-8 inline-flex">
-              <div class="w-[931px] justify-start items-start gap-6 inline-flex">
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+            <div class="md:w-[1160px] md:h-[554px] h-[630px] overflow-y-scroll md:flex-col flex-row justify-center items-center gap-8 md:inline-flex">
+              <div class="md:w-[931px] justify-start items-start gap-6 flex-row md:inline-flex">
+                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -76,7 +76,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -87,7 +87,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -98,7 +98,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -110,8 +110,8 @@ const Page2 = () => {
                   </div>
                 </div>
               </div>
-              <div class="w-[931px] justify-start items-start gap-6 inline-flex">
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+              <div class="md:w-[931px] justify-start items-start gap-6 pb-10 md:pb-0 flex-row md:inline-flex">
+                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0 ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
