@@ -8,8 +8,8 @@ const Page2 = () => {
   };
 
   return (
-    <div className=" w-full h-[750px] duration-200 bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
-      <div className=" w-[1240px] h-full pt-[40px] duration-200 px-12 ">
+    <div className=" w-full  duration-200 bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
+      <div className=" w-[1240px] h-full pt-[40px] duration-200 px-12 py-10 ">
         <div class="w-[345px] md:w-full h-10 justify-between duration-200 items-center inline-flex">
           <div class="text-slate-800 text-xl font-semibold leading-snug">
             All
@@ -63,7 +63,7 @@ const Page2 = () => {
             }`}
           >
             {/* Content for button 1 */}
-            <div class="md:w-[1160px] md:h-[554px] h-[630px] overflow-y-scroll md:flex-col flex-row justify-center items-center gap-8 md:inline-flex">
+            <div class="md:w-[1160px] md:h-[557px] md:flex-col flex-row justify-center items-center gap-8 md:inline-flex">
               <div class="md:w-[931px] justify-start items-start gap-6 flex-row md:inline-flex">
                 <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
