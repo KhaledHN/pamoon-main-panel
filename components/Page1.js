@@ -9,7 +9,7 @@ const Page1 = () => {
 
   return (
     <div
-      className="w-full md:h-[428px] h-[1000px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto bg-no-repeat bg-right  "
+      className="w-full md:h-[440px] h-[1010px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto bg-no-repeat bg-right  "
       style={{ backgroundImage: 'url("/assets/Union.png")' }}
     >
       <div className="w-full md:max-w-[1240px] h-full pt-[40px] duration-200 px-4 md:px-12 ">
