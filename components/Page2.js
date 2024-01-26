@@ -18,8 +18,10 @@ const Page2 = () => {
             <div className="w-[72px] h-10 relative bg-gray-100 rounded-xl">
               <div className="h-7 left-[8px] top-[6px] absolute justify-center items-start gap-0.5 inline-flex">
                 <button
-                  className={`w-7 self-stretch p-[5px] hover:bg-zinc-200 rounded-md justify-center items-center inline-flex ${
-                    activeButton === "button1" ? "active" : ""
+                  className={`w-7 self-stretch p-[5px] justify-center items-center inline-flex ${
+                    activeButton === "button1"
+                      ? "bg-white rounded-md"
+                      : "hover:bg-zinc-200 rounded-md"
                   }`}
                   onClick={() => handleButtonClick("button1")}
                 >
@@ -31,7 +33,9 @@ const Page2 = () => {
                 </button>
                 <button
                   className={`self-stretch p-[5px] justify-start items-start gap-2 inline-flex ${
-                    activeButton === "button2" ? "active" : ""
+                    activeButton === "button2"
+                      ? "bg-white rounded-md"
+                      : "hover:bg-zinc-200 rounded-md"
                   }`}
                   onClick={() => handleButtonClick("button2")}
                 >
@@ -59,13 +63,13 @@ const Page2 = () => {
           <div
             id="content1"
             className={`content ${
-              activeButton === "button1" ? "visible" : "hidden"
+              activeButton === "button1" ? "visible" : "hidden bg-white "
             }`}
           >
             {/* Content for button 1 */}
             <div class="md:w-[1160px] md:h-[557px] md:flex-col flex-row justify-center items-center gap-8 md:inline-flex">
               <div class="md:w-[931px] justify-start items-start gap-6 flex-row md:inline-flex">
-                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -76,7 +80,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -87,7 +91,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -98,7 +102,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -111,7 +115,7 @@ const Page2 = () => {
                 </div>
               </div>
               <div class="md:w-[931px] justify-start items-start gap-6 pb-10 md:pb-0 flex-row md:inline-flex">
-                <div class="flex-col justify-start items-start gap-3 inline-flex pb-7 md:pb-0 ">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0 ">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -122,7 +126,7 @@ const Page2 = () => {
                     </div>
                   </div>
                 </div>
-                <div class="flex-col justify-start items-start gap-3 inline-flex">
+                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex">
                   <div class="w-[214.75px] h-[213px] bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -145,7 +149,7 @@ const Page2 = () => {
           >
             {/* Content for button 2 */}
             <div class="md:w-[1160px] w-[360px] h-[396px] duration-200 flex-col justify-start items-start gap-3 inline-flex">
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">
@@ -171,7 +175,7 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">
@@ -197,7 +201,7 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">
@@ -224,7 +228,7 @@ const Page2 = () => {
                 </div>
               </button>
 
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">
@@ -250,7 +254,7 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">
@@ -276,7 +280,7 @@ const Page2 = () => {
                   </div>
                 </div>
               </button>
-              <button class=" w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
+              <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
                     <div class="justify-start items-center gap-[13.33px] flex">

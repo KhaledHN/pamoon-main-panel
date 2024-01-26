@@ -18,7 +18,7 @@ const Page1 = () => {
             <p className="text-left text-slate-800 text-[37.05px] font-medium leading-[51.87px] ">
               Welcome Back, Alexander 🙌✨
             </p>
-            <p className="md:w-[580px] w-full pt-[20px] text-left text-slate-700 text-base font-light leading-tight">
+            <p className="md:w-[580px] w-full pt-[20px] pl-1 text-left text-slate-700 text-[18px] font-light leading-tight">
               Fermentum aenean adipiscing arcu a quis. Nisi est faucibus
               maecenas netus ipsum praesent euismod. Ultrices at tellus eu augue
               ultrices egestas.
@@ -61,9 +61,9 @@ const Page1 = () => {
           </div>
         </div>
 
-        <div className=" w-full px-8 ">
+        <div className=" w-full px-2 ">
           <div className=" w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
-            <div className="w-[295px]  h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
+            <div className="w-[295px]  h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
                 <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -79,7 +79,7 @@ const Page1 = () => {
                 </div>
               </div>
               <div class="w-[46px] h-[46px] left-[17px] top-[19px] absolute">
-                <div class="w-[29.96px] h-[6.84px] left-[6.78px] top-[38.78px] absolute bg-violet-600 rounded-tl-[40px] rounded-tr-[40px]"></div>
+                <div class="w-[29.96px] h-[6.84px] left-[6.78px] top-[38.78px] absolute bg-violet-800 rounded-tl-[40px] rounded-tr-[40px]"></div>
                 <div class="w-[46px] h-[46px] left-0 top-0 absolute  bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[13.40px]"></div>
                 <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
                   <div class="w-6 h-6 relative">
@@ -89,7 +89,7 @@ const Page1 = () => {
               </div>
             </div>
 
-            <div className="w-[295px] h-[180px] relative shadow-lg rounded-3xl mb-8 md:mb-0">
+            <div className="w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-emerald-200 rounded-[20px] border border-white"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
                 <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -110,7 +110,7 @@ const Page1 = () => {
               </div>
             </div>
 
-            <div className="w-[295px] h-[183px] relative shadow-lg rounded-3xl">
+            <div className="w-[295px] h-[183px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl">
               <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-amber-100 rounded-[20px]"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
                 <div class="text-slate-800 text-base font-semibold leading-[14px]">
