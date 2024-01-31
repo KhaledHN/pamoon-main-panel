@@ -148,7 +148,7 @@ const Page2 = () => {
             }`}
           >
             {/* Content for button 2 */}
-            <div class="md:w-[1160px] w-[360px] h-[396px] duration-200 flex-col justify-start items-start gap-3 inline-flex">
+            <div class="md:w-[1160px] w-[360px] h-[396px] px-2 duration-200 flex-col justify-start items-start gap-3 inline-flex">
               <button class=" hover:scale-105 duration-150 w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">
