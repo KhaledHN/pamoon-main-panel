@@ -1,11 +1,48 @@
-import { React, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Page1 = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isNotificationDropdownOpen, setIsNotificationDropdownOpen] =
+    useState(false);
+  const [isUserDropdownOpen, setIsUserDropdownOpen] = useState(false);
+
+  const notificationDropdownRef = useRef(null);
+  const userDropdownRef = useRef(null);
 
   const handleMoreClick = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+    setIsNotificationDropdownOpen((prev) => !prev);
   };
+
+  const handleUserClick = () => {
+    setIsUserDropdownOpen((prev) => !prev);
+  };
+
+  const handleContentClick = (event) => {
+    event.stopPropagation();
+  };
+
+  const handleClickOutside = (event) => {
+    if (
+      notificationDropdownRef.current &&
+      !notificationDropdownRef.current.contains(event.target)
+    ) {
+      setIsNotificationDropdownOpen(false);
+    }
+
+    if (
+      userDropdownRef.current &&
+      !userDropdownRef.current.contains(event.target)
+    ) {
+      setIsUserDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
@@ -26,44 +63,66 @@ const Page1 = () => {
           </div>
           <div className=" mt-4 md:mt-0">
             <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
-              <div
-                className="relative cursor-pointer"
-                onClick={handleMoreClick}
-              >
-                <div className="justify-center items-center flex">
-                  <div className="p-2 rounded-[40px] justify-center items-center gap-2 flex">
-                    <div className="justify-start items-center gap-[13.33px] flex">
-                      <div className="w-6 h-6 justify-center items-center flex">
-                        <div className="w-6 h-6 relative hover:scale-110 duration-200 ">
-                          <img
-                            src="/assets/notification-bing.svg"
-                            alt="Notification"
-                          />
-                        </div>
-                      </div>
+              <div className="flex items-center space-x-4">
+                {/* Notification Icon */}
+                <div
+                  className="relative cursor-pointer"
+                  onClick={handleMoreClick}
+                >
+                  <div
+                    className="w-6 h-[50px] flex relative hover:scale-110 duration-200"
+                    ref={notificationDropdownRef}
+                  >
+                    <img
+                      src="/assets/notification-bing.svg"
+                      alt="Notification"
+                    />
+                  </div>
+                  {isNotificationDropdownOpen && (
+                    <div
+                      className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl"
+                      onClick={handleContentClick}
+                      style={{ cursor: "default" }}
+                    >
+                      <p className="text-sm text-zinc-500 opacity-90">
+                        No notification found
+                      </p>
                     </div>
-                  </div>
+                  )}
                 </div>
-                {isDropdownOpen && (
-                  <div className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl">
-                    <p className="text-sm text-zinc-500 opacity-90 ">
-                      No notification found
-                    </p>
+
+                {/* User Image */}
+                <div
+                  className=" relative cursor-pointer"
+                  onClick={handleUserClick}
+                >
+                  <div className=" pb-2 pt-2 ">
+                    <img
+                      className="w-9 h-9 flex rounded-[39px] cursor-pointer hover:scale-110 duration-200"
+                      src="/assets/black-man.png"
+                      alt="User"
+                      ref={userDropdownRef}
+                    />
                   </div>
-                )}
+                  {isUserDropdownOpen && (
+                    <div
+                      className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-36 h-[100px] rounded-xl"
+                      onClick={handleContentClick}
+                      style={{ cursor: "default" }}
+                    >
+                      {/* User dropdown content */}
+                    </div>
+                  )}
+                </div>
               </div>
-              <img
-                className="w-10 h-10 rounded-[39px]"
-                src="/assets/black-man.png"
-                alt="User"
-              />
             </div>
           </div>
         </div>
 
-        <div className=" w-full px-2 ">
-          <div className=" w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
-            <div className="w-[295px]  h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
+        <div className=" w-full px-2 flex justify-center ">
+          <div className=" w-full h-full pt-[48px] md:flex md:justify-between px-6 mx-auto ">
+            {/* card 1 */}
+            <div className=" w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
                 <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -89,6 +148,7 @@ const Page1 = () => {
               </div>
             </div>
 
+            {/* card 2 */}
             <div className="w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-emerald-200 rounded-[20px] border border-white"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
@@ -110,6 +170,7 @@ const Page1 = () => {
               </div>
             </div>
 
+            {/* card 3 */}
             <div className="w-[295px] h-[183px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl">
               <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-amber-100 rounded-[20px]"></div>
               <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
