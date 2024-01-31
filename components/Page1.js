@@ -120,7 +120,7 @@ const Page1 = () => {
         </div>
 
         <div className=" w-full px-2 flex justify-center ">
-          <div className=" w-full h-full pt-[48px] md:flex md:justify-between px-6 mx-auto ">
+          <div className=" w-full h-full pt-[48px] md:flex md:justify-between px-4 mx-auto ">
             {/* card 1 */}
             <div className=" w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
