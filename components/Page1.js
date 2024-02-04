@@ -10,10 +10,14 @@ const Page1 = () => {
 
   const handleMoreClick = () => {
     setIsNotificationDropdownOpen((prev) => !prev);
+    // Close user dropdown if open
+    setIsUserDropdownOpen(false);
   };
 
   const handleUserClick = () => {
     setIsUserDropdownOpen((prev) => !prev);
+    // Close notification dropdown if open
+    setIsNotificationDropdownOpen(false);
   };
 
   const handleContentClick = (event) => {
@@ -61,58 +65,119 @@ const Page1 = () => {
               ultrices egestas.
             </p>
           </div>
-          <div className=" mt-4 md:mt-0">
-            <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
-              <div className="flex items-center space-x-4">
-                {/* Notification Icon */}
-                <div
-                  className="relative cursor-pointer"
-                  onClick={handleMoreClick}
-                >
+
+          {/* notification and profile pic */}
+          <div className="mt-4 md:mt-0 md:ml-auto">
+            <div className="hidden md:flex">
+              {/* Render only on larger screens (hidden on mobile) */}
+              <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
+                <div className="flex items-center space-x-4">
+                  {/* Notification Icon */}
                   <div
-                    className="w-6 h-[50px] flex relative hover:scale-110 duration-200"
+                    className="relative cursor-pointer"
+                    onClick={handleMoreClick}
                     ref={notificationDropdownRef}
                   >
-                    <img
-                      src="/assets/notification-bing.svg"
-                      alt="Notification"
-                    />
-                  </div>
-                  {isNotificationDropdownOpen && (
-                    <div
-                      className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl"
-                      onClick={handleContentClick}
-                      style={{ cursor: "default" }}
-                    >
-                      <p className="text-sm text-zinc-500 opacity-90">
-                        No notification found
-                      </p>
+                    <div className="w-6 h-[50px] flex relative hover:scale-110 duration-200">
+                      <img
+                        src="/assets/notification-bing.svg"
+                        alt="Notification"
+                      />
                     </div>
-                  )}
-                </div>
+                    {isNotificationDropdownOpen && (
+                      <div
+                        className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl"
+                        onClick={handleContentClick}
+                        style={{ cursor: "default" }}
+                      >
+                        <p className="text-sm text-zinc-500 opacity-90">
+                          No notification found
+                        </p>
+                      </div>
+                    )}
+                  </div>
 
-                {/* User Image */}
-                <div
-                  className=" relative cursor-pointer"
-                  onClick={handleUserClick}
-                >
-                  <div className=" pb-2 pt-2 ">
-                    <img
-                      className="w-9 h-9 flex rounded-[39px] cursor-pointer hover:scale-110 duration-200"
-                      src="/assets/black-man.png"
-                      alt="User"
-                      ref={userDropdownRef}
-                    />
-                  </div>
-                  {isUserDropdownOpen && (
-                    <div
-                      className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-36 h-[100px] rounded-xl"
-                      onClick={handleContentClick}
-                      style={{ cursor: "default" }}
-                    >
-                      {/* User dropdown content */}
+                  {/* User Image */}
+                  <div
+                    className="relative cursor-pointer"
+                    onClick={handleUserClick}
+                    ref={userDropdownRef}
+                  >
+                    <div className="pb-2 pt-2">
+                      <img
+                        className="w-9 h-9 flex rounded-[39px] cursor-pointer hover:scale-110 duration-200"
+                        src="/assets/black-man.png"
+                        alt="User"
+                      />
                     </div>
-                  )}
+                    {isUserDropdownOpen && (
+                      <div
+                        className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-36 h-[100px] rounded-xl"
+                        onClick={handleContentClick}
+                        style={{ cursor: "default" }}
+                      >
+                        {/* User dropdown content */}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="md:hidden">
+              {/* Render only on smaller screens (hidden on desktop) */}
+              <div className="fixed top-0 right-0 m-4">
+                <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
+                  <div className="flex items-center space-x-4">
+                    {/* Notification Icon */}
+                    <div
+                      className="relative cursor-pointer"
+                      onClick={handleMoreClick}
+                      ref={notificationDropdownRef}
+                    >
+                      <div className="w-6 h-[50px] flex relative hover:scale-110 duration-200">
+                        <img
+                          src="/assets/notification-bing.svg"
+                          alt="Notification"
+                        />
+                      </div>
+                      {isNotificationDropdownOpen && (
+                        <div
+                          className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl"
+                          onClick={handleContentClick}
+                          style={{ cursor: "default" }}
+                        >
+                          <p className="text-sm text-zinc-500 opacity-90">
+                            No notification found
+                          </p>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* User Image */}
+                    <div
+                      className="relative cursor-pointer"
+                      onClick={handleUserClick}
+                      ref={userDropdownRef}
+                    >
+                      <div className="pb-2 pt-2">
+                        <img
+                          className="w-9 h-9 flex rounded-[39px] cursor-pointer hover:scale-110 duration-200"
+                          src="/assets/black-man.png"
+                          alt="User"
+                        />
+                      </div>
+                      {isUserDropdownOpen && (
+                        <div
+                          className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-36 h-[100px] rounded-xl"
+                          onClick={handleContentClick}
+                          style={{ cursor: "default" }}
+                        >
+                          {/* User dropdown content */}
+                        </div>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
