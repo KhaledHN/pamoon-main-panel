@@ -184,74 +184,82 @@ const Page1 = () => {
           </div>
         </div>
 
-        <div className=" w-full px-2 flex justify-center ">
-          <div className=" w-full h-full pt-[48px] md:flex md:justify-between px-4 mx-auto ">
+        <div className=" w-full flex justify-center ">
+          <div className=" w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
             {/* card 1 */}
-            <div className=" w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
-              <div class="w-[298px] h-[185px] left-0 top-0 absolute bg-violet-200 rounded-[20px] border border-white"></div>
-              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-                <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                  Pamoon AI
+            <div className="w-[295px] h-[183 px] bg-violet-200 hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
+              <div className=" h-[183px] p-5 ">
+                <div className=" flex items-center justify-between ">
+                  <div className=" w-[46px] h-[46px] bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px] flex justify-center items-center ">
+                    <div className=" w-[29.96px] h-[6.84px] top-[34px] absolute bg-violet-500 rounded-tl-[40px] rounded-tr-[40px] blur "></div>
+                    <div className=" scale-105 ">
+                      <img src="/assets/magicpen.svg" />
+                    </div>
+                  </div>
+                  <div class="px-3 py-2 bg-white bg-opacity-10 rounded-[10px] shadow-lg justify-center items-center gap-2 inline-flex">
+                    <div class="text-violet-500 text-sm font-normal leading-[14px]">
+                      Coming Soon
+                    </div>
+                  </div>
                 </div>
-                <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                  Lorem ipsum
-                </div>
-              </div>
-              <div class="px-3 py-2 left-[168px] top-[19px] absolute bg-white bg-opacity-10 rounded-[10px] shadow-lg justify-center items-center gap-2 inline-flex">
-                <div class="text-violet-500 text-sm font-normal leading-[14px]">
-                  Coming Soon
-                </div>
-              </div>
-              <div class="w-[46px] h-[46px] left-[17px] top-[19px] absolute">
-                <div class="w-[29.96px] h-[6.84px] left-[6.78px] top-[38.78px] absolute bg-violet-800 rounded-tl-[40px] rounded-tr-[40px]"></div>
-                <div class="w-[46px] h-[46px] left-0 top-0 absolute  bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[13.40px]"></div>
-                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                  <div class="w-6 h-6 relative">
-                    <img src="/assets/magicpen.svg" />
+                <div className=" text-left pt-[52px] ">
+                  <div>
+                    <p className=" text-slate-800 text-base font-semibold leading-[14px] ">
+                      Pamoon AI
+                    </p>
+                  </div>
+                  <div className=" pt-2 ">
+                    <p className=" text-slate-600 text-sm font-normal leading-[14px] ">
+                      Lorem ipsum
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* card 2 */}
-            <div className="w-[295px] h-[180px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
-              <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-emerald-200 rounded-[20px] border border-white"></div>
-              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-                <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                  Template Library
-                </div>
-                <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                  Explore web site
-                </div>
-              </div>
-              <div class="w-[46px] h-[46px] left-[17.33px] top-[19px] absolute">
-                <div class="w-[29.96px] h-[6.84px] left-[7.44px] top-[38.78px] absolute bg-emerald-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
-                <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-opacity-20 rounded-[10px] shadow-inner backdrop-blur-[10px]"></div>
-                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                  <div class="w-6 h-6 relative">
+            <div className="w-[295px] h-[183 px] bg-emerald-200 hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
+              <div className=" h-[183px] p-5 ">
+                <div className=" w-[46px] h-[46px] bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px] flex justify-center items-center ">
+                  <div className=" w-[29.96px] h-[6.84px] top-[34px] absolute bg-emerald-500 rounded-tl-[40px] rounded-tr-[40px] blur "></div>
+                  <div className=" scale-105 ">
                     <img src="/assets/colorfilter.svg" />
+                  </div>
+                </div>
+                <div className=" text-left pt-[52px] ">
+                  <div>
+                    <p className=" text-slate-800 text-base font-semibold leading-[14px] ">
+                      Template Library
+                    </p>
+                  </div>
+                  <div className=" pt-2 ">
+                    <p className=" text-slate-600 text-sm font-normal leading-[14px] ">
+                      Explore web site
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* card 3 */}
-            <div className="w-[295px] h-[183px] hover:scale-105 duration-150 relative shadow-lg rounded-3xl">
-              <div class="w-[296px] h-[183px] left-0 top-0 absolute bg-amber-100 rounded-[20px]"></div>
-              <div class="left-[20px] top-[117px] absolute flex-col justify-start items-start gap-2 inline-flex">
-                <div class="text-slate-800 text-base font-semibold leading-[14px]">
-                  Watch Tutorials
-                </div>
-                <div class="text-slate-600 text-sm font-normal leading-[14px]">
-                  Learn Pammon
-                </div>
-              </div>
-              <div class="w-[46px] h-[46px] left-[16.67px] top-[19px] absolute">
-                <div class="w-[29.96px] h-[6.84px] left-[7.11px] top-[38.78px] absolute bg-orange-500 rounded-tl-[40px] rounded-tr-[40px]"></div>
-                <div class="w-[46px] h-[46px] left-0 top-0 absolute bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px]"></div>
-                <div class="w-6 h-6 left-[11px] top-[11px] absolute justify-center items-center inline-flex">
-                  <div class="w-6 h-6 relative">
+            <div className="w-[295px] h-[183 px] bg-orange-100 hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
+              <div className=" h-[183px] p-5 ">
+                <div className=" w-[46px] h-[46px] bg-white bg-opacity-10 rounded-[10px] shadow-inner backdrop-blur-[9.90px] flex justify-center items-center ">
+                  <div className=" w-[29.96px] h-[6.84px] top-[34px] absolute bg-orange-500 rounded-tl-[40px] rounded-tr-[40px] blur "></div>
+                  <div className=" scale-105 ">
                     <img src="/assets/video-play.svg" />
+                  </div>
+                </div>
+                <div className=" text-left pt-[52px] ">
+                  <div>
+                    <p className=" text-slate-800 text-base font-semibold leading-[14px] ">
+                      Watch Tutorials
+                    </p>
+                  </div>
+                  <div className=" pt-2 ">
+                    <p className=" text-slate-600 text-sm font-normal leading-[14px] ">
+                      Learn Pammon
+                    </p>
                   </div>
                 </div>
               </div>
