@@ -9,7 +9,7 @@ const Page2 = () => {
 
   return (
     <div className=" w-full  duration-200 bg-slate-50 text-center flex items-start md:items-center justify-center relative overflow-hidden ">
-      <div className=" w-[1240px] h-full pt-[40px] duration-200 px-12 py-10 ">
+      <div className=" w-[1040px] h-full pt-[40px] duration-200 px-12 py-10 ">
         <div class="w-[345px] md:w-full h-10 justify-between duration-200 items-center inline-flex">
           <div class="text-slate-800 text-xl font-semibold leading-snug">
             All
@@ -148,7 +148,7 @@ const Page2 = () => {
             }`}
           >
             {/* Content for button 2 */}
-            <div class="md:w-[1160px] w-[360px] h-[396px] px-2 duration-200 flex-col justify-start items-start gap-3 inline-flex">
+            <div class="md:w-[980px] w-[360px] h-[396px] px-2 duration-200 flex-col justify-start items-start gap-3 inline-flex">
               <button class=" hover:scale-105 duration-150 shadow-sm hover:shadow-md w-full pl-2 pr-4 py-2 bg-white rounded-[20px] justify-between items-center inline-flex">
                 <div class="justify-start items-center gap-3 flex">
                   <div class="p-2 bg-gray-100 rounded-[10px] justify-start items-center gap-2 flex">

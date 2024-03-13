@@ -53,7 +53,7 @@ const Page1 = () => {
       className="w-full md:h-[440px] h-[1010px] duration-200 bg-white text-center flex items-start md:items-center justify-center overflow-hidden mx-auto bg-no-repeat bg-right  "
       style={{ backgroundImage: 'url("/assets/Union.png")' }}
     >
-      <div className="w-full md:max-w-[1240px] h-full pt-[40px] duration-200 px-4 md:px-12 ">
+      <div className="w-full md:max-w-[1050px] h-full pt-[40px] duration-200 px-4 md:px-12 ">
         <div className="w-full justify-between items-start flex duration-200 flex-col md:flex-row">
           <div className="md:w-[1240px]">
             <p className="text-left text-slate-800 text-[37.05px] font-medium leading-[51.87px] ">
@@ -68,7 +68,7 @@ const Page1 = () => {
 
           {/* notification and profile pic */}
           <div className="mt-4 md:mt-0 md:ml-auto">
-            <div className="hidden md:flex">
+            <div className="">
               {/* Render only on larger screens (hidden on mobile) */}
               <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
                 <div className="flex items-center space-x-4">
@@ -123,69 +123,11 @@ const Page1 = () => {
                 </div>
               </div>
             </div>
-
-            <div className="md:hidden">
-              {/* Render only on smaller screens (hidden on desktop) */}
-              <div className="fixed top-0 right-0 m-4">
-                <div className="w-[104px] h-[52px] px-2 py-1.5 bg-gray-100 rounded-xl shadow-lg justify-center items-center gap-2 inline-flex">
-                  <div className="flex items-center space-x-4">
-                    {/* Notification Icon */}
-                    <div
-                      className="relative cursor-pointer"
-                      onClick={handleMoreClick}
-                      ref={notificationDropdownRef}
-                    >
-                      <div className="w-6 h-[50px] flex relative hover:scale-110 duration-200">
-                        <img
-                          src="/assets/notification-bing.svg"
-                          alt="Notification"
-                        />
-                      </div>
-                      {isNotificationDropdownOpen && (
-                        <div
-                          className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-48 h-[100px] rounded-xl"
-                          onClick={handleContentClick}
-                          style={{ cursor: "default" }}
-                        >
-                          <p className="text-sm text-zinc-500 opacity-90">
-                            No notification found
-                          </p>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* User Image */}
-                    <div
-                      className="relative cursor-pointer"
-                      onClick={handleUserClick}
-                      ref={userDropdownRef}
-                    >
-                      <div className="pb-2 pt-2">
-                        <img
-                          className="w-9 h-9 flex rounded-[39px] cursor-pointer hover:scale-110 duration-200"
-                          src="/assets/black-man.png"
-                          alt="User"
-                        />
-                      </div>
-                      {isUserDropdownOpen && (
-                        <div
-                          className="absolute top-full right-0 bg-gray-200 shadow-lg p-4 w-36 h-[100px] rounded-xl"
-                          onClick={handleContentClick}
-                          style={{ cursor: "default" }}
-                        >
-                          {/* User dropdown content */}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
         <div className=" w-full flex justify-center ">
-          <div className=" w-full h-full pt-[48px] md:flex md:justify-between mx-auto ">
+          <div className=" w-full h-full pt-[48px] md:flex md:justify-center md:col-span-3  gap-8 mx-auto ">
             {/* card 1 */}
             <div className="w-[295px] h-[183 px] bg-violet-200 hover:scale-105 duration-150 relative shadow-lg rounded-3xl mb-8 md:mb-0">
               <div className=" h-[183px] p-5 ">
