@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { React, useState } from "react";
 
 const Page2 = () => {
@@ -69,7 +70,10 @@ const Page2 = () => {
             {/* Content for button 1 */}
             <div class="md:w-[1160px] md:h-[557px] md:flex-col flex-row justify-center items-center gap-8 md:inline-flex">
               <div class="md:w-[931px] justify-start items-start gap-6 flex-row md:inline-flex">
-                <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
+                <Link
+                  href="https://second-panel.vercel.app/"
+                  class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  "
+                >
                   <div class="w-[214.75px] h-[213px] duration-150 hover:shadow-lg shadow-md bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
                     <div class="text-slate-800 text-base font-semibold leading-[14px]">
@@ -79,7 +83,7 @@ const Page2 = () => {
                       Edited 23 min ago
                     </div>
                   </div>
-                </div>
+                </Link>
                 <div class="flex-col hover:scale-105 duration-150 justify-start items-start gap-3 inline-flex pb-7 md:pb-0  ">
                   <div class="w-[214.75px] h-[213px] duration-150 hover:shadow-lg shadow-md bg-gray-200 rounded-[20px]"></div>
                   <div class="flex-col justify-start items-start gap-2 flex">
